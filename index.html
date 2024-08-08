@@ -1,4 +1,11 @@
+import React from "react";
+import ReactDOM from "react-dom/client";
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import App from "./App.jsx";
+import Sidebar from "./Component/Sidebar.jsx";
+import Mainpage from "./Component/MainPage.jsx";
+import Item from "./Component/Item.jsx";
+import "./index.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -12,3 +19,4 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     </Router>
   </React.StrictMode>
 );
+
