@@ -1,22 +1,14 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import { HashRouter as Router, Routes, Route } from "react-router-dom";
-import App from "./App.jsx";
-import Sidebar from "./Component/Sidebar.jsx";
-import Mainpage from "./Component/MainPage.jsx";
-import Item from "./Component/Item.jsx";
-import "./index.css";
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your App</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <!-- The React app will be injected here -->
+  </body>
+</html>
 
-ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
-    <Router>
-      <Routes>
-        <Route path="/" element={<App />} />
-        <Route path="/sidebar" element={<Sidebar />} />
-        <Route path="/mainpage" element={<Mainpage />} />
-        <Route path="/item" element={<Item />} />
-      </Routes>
-    </Router>
-  </React.StrictMode>
-);
 
